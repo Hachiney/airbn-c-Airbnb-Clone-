@@ -8,6 +8,7 @@ export default function LoginPage() {
     const [password, setPassword] = useState('');
     const [redirect, setRedirect] = useState(false);
     const {setUser} = useContext(UserContext);
+
     async function loginUser(e) {
         e.preventDefault();
         try {
@@ -28,12 +29,12 @@ export default function LoginPage() {
             <h1 className="text-4xl text-center mb-3">Login</h1>
             <form className="max-w-md mx-auto" onSubmit={loginUser}>
                 <input  type='email' 
-                        placeholder="your@email.com" 
+                        placeholder="Your Email" 
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                         />
                 <input  type='password' 
-                        placeholder="password" 
+                        placeholder="Your Password" 
                         value={password}
                         onChange={e => setPassword(e.target.value)}
                         />
