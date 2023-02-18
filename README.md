@@ -1,7 +1,6 @@
 # airbn-c:   a Full-stack MERN Airbnb-Clone
 
 
-
 - Front-end:     React.js
 
 - Back-end:      Node.js, Express.js
